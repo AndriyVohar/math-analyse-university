@@ -1,0 +1,10 @@
+pdf-engine: xelatex
+include-in-header:
+  - header.tex
+variables:
+  lang: uk
+  mainfont: DejaVu Serif
+resource-path:
+  - ./resources/images
+  - ../../resources/images
+
