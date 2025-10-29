@@ -1,7 +1,20 @@
 \usepackage{fontspec}
+\usepackage{unicode-math}
+\usepackage[ukrainian]{babel}
 \setmainfont{DejaVu Serif}
-\usepackage{polyglossia}
-\setdefaultlanguage{ukrainian}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+% Додаємо підтримку емодзі
+\usepackage{emoji}
+\setemojifont{Noto Color Emoji}
+
+% Або альтернативно:
+\newfontfamily\emojifont{Noto Color Emoji}[Renderer=Harfbuzz]
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
 % Поля сторінки
 \usepackage[a4paper,top=20mm,bottom=20mm,left=30mm,right=20mm]{geometry}
